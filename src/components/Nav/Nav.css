@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav__link {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border: none;
+  background: none;
+  transition: transfrom 250ms;
+}
+.nav__btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.nav__link:hover {
+  color: #ffcc03;
+  opacity: 50%;
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 650px) {
+}
