@@ -21,3 +21,5 @@ This application offers an interactive search engine for Pokemon charaters, prov
 2. The Api will load 20 charactes automatically in the paginate response
 
 ## Github and linkedin page
+
+1. Frontend [Frontend](https://abelcutz.github.io/poke-ball-frontend/)
