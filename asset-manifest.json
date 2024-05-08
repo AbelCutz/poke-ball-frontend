@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/poke-ball-frontend/static/css/main.e22b6595.css",
-    "main.js": "/poke-ball-frontend/static/js/main.a6766b8e.js",
+    "main.css": "/poke-ball-frontend/static/css/main.3c3ad4bb.css",
+    "main.js": "/poke-ball-frontend/static/js/main.c60d34a6.js",
     "static/media/leftPokemon.svg": "/poke-ball-frontend/static/media/leftPokemon.e32847d96fdb651bdc4ad92584564823.svg",
     "static/media/pokemonIcon.svg": "/poke-ball-frontend/static/media/pokemonIcon.edc7837c281bd48e3d11b4f8639a29fc.svg",
     "static/media/pikachu.jpg": "/poke-ball-frontend/static/media/pikachu.94d3c9e641bd59f3301e.jpg",
@@ -10,11 +10,11 @@
     "static/media/CabinetGrotesk-Regular.woff": "/poke-ball-frontend/static/media/CabinetGrotesk-Regular.513117a4acf2bda47c67.woff",
     "static/media/CabinetGrotesk-Medium.woff": "/poke-ball-frontend/static/media/CabinetGrotesk-Medium.ed9c4b9af2fe3a8dd14d.woff",
     "index.html": "/poke-ball-frontend/index.html",
-    "main.e22b6595.css.map": "/poke-ball-frontend/static/css/main.e22b6595.css.map",
-    "main.a6766b8e.js.map": "/poke-ball-frontend/static/js/main.a6766b8e.js.map"
+    "main.3c3ad4bb.css.map": "/poke-ball-frontend/static/css/main.3c3ad4bb.css.map",
+    "main.c60d34a6.js.map": "/poke-ball-frontend/static/js/main.c60d34a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e22b6595.css",
-    "static/js/main.a6766b8e.js"
+    "static/css/main.3c3ad4bb.css",
+    "static/js/main.c60d34a6.js"
   ]
 }
