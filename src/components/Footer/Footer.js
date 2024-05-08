@@ -5,7 +5,9 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__author">&copy; Developed by Abel Cutz 2024</div>
+      <address className="footer__author">
+        &copy; Developed by Abel Cutz 2024
+      </address>
       <div className="footer__links">
         <div className="footer__links-wrapper">
           <div className="footer__links-items">

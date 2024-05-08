@@ -39,14 +39,22 @@ const Card = ({ handleGetPokemon }) => {
   };
 
   return (
-    <div className="card__section">
-      <img className="card__section-right" src={rightPokemon}></img>
-      <img className="card__section-left" src={leftPokemon}></img>
+    <div className="card">
+      <img
+        className="card__right-image"
+        src={rightPokemon}
+        atl={`${rightPokemon} image`}
+      ></img>
+      <img
+        className="card__left-image"
+        src={leftPokemon}
+        atl={`${leftPokemon} image`}
+      ></img>
       {loading ? (
         <Preloader />
       ) : (
         <div
-          className={`card ${isFlipped ? "flipped" : ""}`}
+          className={`card__block ${isFlipped ? "flipped" : ""}`}
           onClick={handleCardClick}
         >
           <div className="card__face card__face--front">
@@ -84,20 +92,20 @@ const Card = ({ handleGetPokemon }) => {
                 </ul>
               </div>
               <div className="card__buttons">
-                <div className="card__button" onClick={goToPrevious}>
+                <button className="card__button" onClick={goToPrevious}>
                   <label>#{poke.id - 1}</label>
                   <IoMdArrowDropleftCircle
                     className="pagination__btn"
                     alt="previous card"
                   />
-                </div>
-                <div className="card__button" onClick={goToNext}>
+                </button>
+                <button className="card__button" onClick={goToNext}>
                   <label>#{poke.id + 1}</label>
                   <IoMdArrowDroprightCircle
                     className="pagination__btn"
                     alt="next card"
                   />
-                </div>
+                </button>
               </div>
             </div>
           </div>

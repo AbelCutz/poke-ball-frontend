@@ -9,10 +9,11 @@ const SearchBar = ({ handleSearchSubmit }) => {
   };
 
   const handleSearch = (e) => {
-    if (pokeId === "") {
+    e.preventDefault();
+    if (!pokeId) {
+      alert("Please enter a Pokemon Name or ID.");
       return;
     }
-    e.preventDefault();
     handleSearchSubmit(pokeId);
     setPokeId("");
   };
@@ -23,8 +24,9 @@ const SearchBar = ({ handleSearchSubmit }) => {
         className="search-bar__input"
         onChange={handleInputChange}
         type="text"
-        placeholder="Search"
+        placeholder="Enter Name or ID"
         value={pokeId}
+        required
       ></input>
       <button className="search-bar__btn" type="submit">
         Search!

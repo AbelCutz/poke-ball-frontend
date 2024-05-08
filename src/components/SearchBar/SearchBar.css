@@ -3,7 +3,7 @@
 }
 
 .search-bar__input {
-  font-family: "Cabinet Grotesk Medium";
+  font-family: "Cabinet Grotesk Medium", Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
   width: 140px;
@@ -18,7 +18,7 @@
 }
 
 .search-bar__btn {
-  font-family: "Cabinet Grotesk Medium";
+  font-family: "Cabinet Grotesk Medium", Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #b90404;
   height: 34px;

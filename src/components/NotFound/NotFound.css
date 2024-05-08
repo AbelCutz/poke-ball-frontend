@@ -1,5 +1,5 @@
 .not-found {
-  font-family: "Cabinet Grotesk Medium";
+  font-family: "Cabinet Grotesk Medium", Arial, Helvetica, sans-serif;
   margin: 200px auto 335px;
   width: 500px;
   color: #ffcc00;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 .not-found__title {
-  font-family: "Cabinet Grotesk Bold";
+  font-family: "Cabinet Grotesk Bold", Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0 15px;
   font-size: 55px;
