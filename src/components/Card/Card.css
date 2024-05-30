@@ -1,0 +1,234 @@
+@keyframes popup {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 60px 0;
+}
+
+.card__right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 400px;
+  max-height: 600px;
+  animation-name: popup;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  transition: transfrom 0.5s;
+}
+
+.card__left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 400px;
+  max-height: 600px;
+  animation-name: popup;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  transition: transfrom 0.5s;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+.card__block {
+  width: 500px;
+  height: 640px;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+}
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card__face--front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-image: url(../../images/pikachu.jpg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.25));
+  animation-name: popup;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  transition: transfrom 0.5s;
+}
+
+.card__face--front:hover {
+  transform: translateZ(20px) scale(1.1);
+}
+
+.card__front-image {
+  border: 1px solid rgba(238, 238, 17, 0.255);
+  border-radius: 9.5rem;
+  height: 217px;
+  margin-right: 60px;
+  margin-top: 175px;
+}
+.card__face--back {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.25));
+  transform: rotateY(180deg);
+}
+.card__block.flipped {
+  transform: rotateY(180deg);
+}
+.card__info {
+  text-align: center;
+}
+
+.card__image {
+  border: 1px solid rgba(255, 255, 255, 0.255);
+  border-radius: 0.5rem;
+  width: 200px;
+  height: 200px;
+}
+
+.card__title {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #ffcc00;
+  padding: 10px;
+}
+.card__poke-weight {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #ffcc00;
+}
+.card__abilities {
+  border-top: 1px solid rgba(255, 255, 255, 0.255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.255);
+  display: flex;
+  align-items: center;
+}
+
+.card__abilities-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+.card__abilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  color: #ffcc00;
+}
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.card__button label {
+  margin-right: 5px;
+  color: #ffcc00;
+}
+
+.pagination__btn {
+  width: 25px;
+  height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .card__section {
+    padding: 30px 0;
+  }
+
+  .card__container {
+    width: 90%;
+  }
+  .card {
+    max-width: 300px;
+    max-height: 500px;
+  }
+  .card__face--front,
+  .card__face--back {
+    border-radius: 8px;
+  }
+
+  .card__tile {
+    font-size: 20px;
+  }
+
+  .card__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card__abilities-title {
+    font-size: 18px;
+  }
+  .card__buttons {
+    flex-direction: row;
+    align-items: space-between;
+    margin-top: 15px;
+  }
+  .card__face--front {
+    background-size: 300px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .card__section-left {
+    max-width: 80px;
+    max-height: 1000px;
+  }
+  .card__section-right {
+    max-width: 80px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1318px) {
+  .card__section-left {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .card__section-right {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

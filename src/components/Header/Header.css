@@ -1,0 +1,33 @@
+.header {
+  background-color: #d94d3a;
+  display: flex;
+  padding: 3rem 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.header__logo {
+  width: 180px;
+  cursor: pointer;
+  align-items: center;
+  transition: transfrom 250ms;
+}
+.header__logo:hover {
+  transform: translateY(-10px);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
